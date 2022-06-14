@@ -1,0 +1,63 @@
+.order-list {
+    background-color: yellow;
+    font-weight: 600;
+}
+
+.order-list li:nth-of-type(2n) {
+    color: green;
+}
+
+.order-list li:nth-of-type(2n+1) {
+    text-transform: uppercase;
+}
+
+h1, h3 {
+    color: red;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+.blue-font {
+    color: blue;
+}
+
+.pink-bg {
+    background-color: pink;
+}
+
+#stack-hover:hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: orange;
+}
+
+#w3-hover:hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: green;
+}
+
+#mdn-hover:hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+#dev-hover:hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: yellow;
+}
+
+#trybe-hover:hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: green;
+}

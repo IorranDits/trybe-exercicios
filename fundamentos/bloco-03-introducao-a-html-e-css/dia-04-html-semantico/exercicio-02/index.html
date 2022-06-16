@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML semântico 02</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -14,10 +18,12 @@
         <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
     </header>
     <nav>
-        <ul id="nav-list">
-            <li><a href="">Página Inicial</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Contato</a></li>
+        <ul id="nav">
+            <div id="nav-content">
+                <li class="nav-list"><a href="">Página Inicial</a></li>
+                <li class="nav-list"><a href="">Sobre</a></li>
+                <li class="nav-list"><a href="">Contato</a></li>
+            </div>
         </ul>
     </nav>
 
@@ -26,24 +32,26 @@
             <h2>Fatos sobre o Stomatopada</h2>
             <section id="scientific-info">
                 <div id="general-container">
-                    <img src="./assets/stomatopoda.jpg" alt="stomatopoda, a lacraia-do-mar">
-                    <h4> Nome científico : <em>Odontodactylus scyllarus</em> </h4>
-                    <h4> Classificação científica</h4>
-                    <ul>
-                        <li>Reino : Animalia</li>
-                        <li>Filo : Arthopoda</li>
-                        <li>Subfilo : Crustacea</li>
-                        <li>Classe : Malacostraca</li>
-                        <li>Subclasse : Hoplocarida</li>
-                        <li>Ordem : <strong>Stomatopoda</strong></li>
-                    </ul>
+                    <img id="general-img" src="./assets/stomatopoda.jpg" alt="stomatopoda, a lacraia-do-mar">
+                    <div id="general-content">
+                        <h4> Nome científico : <em>Odontodactylus scyllarus</em> </h4>
+                        <h4> Classificação científica</h4>
+                        <ul>
+                            <li>Reino : Animalia</li>
+                            <li>Filo : Arthopoda</li>
+                            <li>Subfilo : Crustacea</li>
+                            <li>Classe : Malacostraca</li>
+                            <li>Subclasse : Hoplocarida</li>
+                            <li>Ordem : <strong>Stomatopoda</strong></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <section id="fact1">
                     <h3> A lagosta é nossa!</h3>
                     <p> Estomatrópodes podem ser encontrados em toda a costa brasileira! <strong>Mas cuidado</strong>,
                         elas sabem se defender! Por isso não devem ser tocadas por humanos.</p>
-                    <img src="./assets/bandeira.webp" alt="Bandeira do Brasil desenhada">
+                    <img class="section-imgs" src="./assets/bandeira.webp" alt="Bandeira do Brasil desenhada">
                 </section>
 
                 <section id="fact2">
@@ -51,7 +59,7 @@
                     <p>Esses animais possuem o <em>mais complexo sistema de visão de cores do mundo animal</em>, pois
                         enxergam 12 cores primárias, correspondentes aos 12 pigmentos distintos presentes em sua retina.
                     </p>
-                    <img src="./assets/super-visao.jpg" alt="Super visão do Super Man">
+                    <img class="section-imgs" src="./assets/super-visao.jpg" alt="Super visão do Super Man">
                 </section>
 
                 <section id="fact3">
@@ -60,12 +68,12 @@
                         animal, <strong>um soco que pode apresentar a velocidade de um tiro calibre .22 (equivalente a
                             720 km/h)</strong> e com uma força capaz de esmagar conchas, carapaças de carangueijos e até
                         quebrar vidros reforçados de aquários!</p>
-                    <img src="./assets/punshes.jpg" alt="ilustração de uma rajadade socos">
+                    <img class="section-imgs" src="./assets/punshes.jpg" alt="ilustração de uma rajadade socos">
                 </section>
         </article>
         <aside>
             <h3>Quer saber mais? Assista a esse video do Nat Geo no youtube!</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/E0Li1k5hGBE"
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/E0Li1k5hGBE"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
@@ -74,7 +82,7 @@
 
         <section>
             <h3>Referências bibliográficas:</h3>
-            <ul>
+            <ul id="bibliography">
                 <li><a
                         href="https://preview.redd.it/b5b94jcjd8m31.png?width=512&format=png&auto=webp&s=0498c5c373197fee84b5bea0a00d6edbf11e1803">https://preview.redd.it/b5b94jcjd8m31.png?width=512&format=png&auto=webp&s=0498c5c373197fee84b5bea0a00d6edbf11e1803</a>
                 </li>

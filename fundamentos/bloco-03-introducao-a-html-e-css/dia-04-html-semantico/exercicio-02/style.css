@@ -68,7 +68,7 @@ article h2 {
 }
 
 #general-content {
-    margin-left: 25px;
+    margin-left: 35px;
     font-size: 18px;
     display: inline-block;
     max-width: 40%;
@@ -85,6 +85,10 @@ article h2 {
 
 }
 
+.general-h {
+    font-size: 20px;
+    
+}
 /*------------------------------ Sections ----------------------*/
 
 h3 {

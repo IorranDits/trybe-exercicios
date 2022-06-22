@@ -66,6 +66,32 @@ if (angulo1 > 0 && angulo2 > 0 && angulo3 > 0) {
   console.log('Error');
 }
 
+//Peça de xadrez
+let piece = 'peão';
+
+switch (piece.toLocaleLowerCase()) {
+  case 'peã':
+    console.log('Primeiro movimento: Uma ou duas casa a frente;Próximos movimentos: uma casa a frente; Come peça a uma casa em diagonal a frente.');
+    break;
+  case 'torre':
+    console.log('Movimento horizontal.');
+    break;
+  case 'bispo':
+    console.log('Movimento em diagonal.');
+    break
+  case 'cavalo':
+    console.log('Movimento em "L".');
+    break;
+  case 'rainha':
+    console.log('Movimento em diagonal ou horizontal.');
+    break;
+  case 'rei':
+    console.log('1 casa em qualquer direção.');
+    break;
+  default:
+    console.log('Erro: peça inválida.')
+}
+
 
 
 

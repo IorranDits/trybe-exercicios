@@ -1,51 +1,75 @@
-// 1 - 
-// Faça um algoritmo que calcule a soma de 1 a 50 usando a estrutura "for" e retorne no formato:
-//A soma total de 1 a 50 é:
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-let resultado = 0;
-
-for (let index = 1; index <= 50; index+=1){
-  resultado += index;
+// Exercício 01:
+for (let index = 0; index < numbers.length; index += 1){
+  //console.log(numbers[index]);
 }
-//console.log(resultado);
 
+// Exercíico 02 : 
+let soma = 0;
+for (let index = 0; index < numbers.length; index += 1){
+  //console.log(numbers[index]);
+  soma += numbers[index];
+}
+ //console.log(soma);
 
-//2 -
+ //Exercíico 03  e 04:
+ let soma1 = 0;
+ let mediaArit = 0;
+ let count = 0;
+ for (let index = 0; index < numbers.length; index += 1){
+  soma1 += numbers[index];
+  count += 1;
+}
+mediaArit = soma1 / count;
+if (mediaArit > 20) {
+ // console.log('Valor maior que 20');
+} else {
+ // console.log('Valor menor ou igual a 20'); 
+}
+//console.log(mediaArit);
 
-// Crie um algoritmo que conte quantos números do intervalo entre 2 e 150 são divisíveis por 3.
-let numero = 0;
+//exercíico 05 :
+let number = 0;
+for (let index = 0; index < numbers.length; index += 1){
+if (number < numbers[index]){
+  number = numbers[index];
+}
+}
+//console.log(number);
 
-for (let index = 2;index <= 150;index +=1) {
-  if (index % 3 === 0)  {
-    numero += 1;
+//Exercício 06:
+let count1 = 0;
+for (let index = 0; index < numbers.length; index += 1){
+  if((numbers[index] % 2) === 0){
+    count1 += 0;
+  }else {
+    count1 += 1;
   }
 }
-  console.log(numero);
+if (count1 > 0) {
+ // console.log(count1);
+}else {
+  //console.log('nenhum valor ímpar encontrado')
+}
 
-// Caso a quantidade seja igual a 50, exiba uma mensagem secreta.
+//Exercício 07 :
+let menor = numbers[0];
+for (let index = 0; index < numbers.length; index += 1){
+  if (menor > numbers[index]){
+    menor = numbers[index];
+  }
+}
+//console.log(menor);
 
-if (numero === 50) {
-  console.log('Você descobriu nosso segredo!');
-} 
+//Exercício 08:
+let numeros = [];
+for(let contador = 1; contador <= 25; contador += 1){
+  numeros.push(contador);
+  //console.log(numeros);
+}
 
-// 3 -
-//Crie um algoritmo que simula o jogo "pedra, papel e tesoura" levando em consideração que são apenas duas pessoas jogando e imprima o resultado no formato:
-// "Player 1 won" ou "A Ties" ou "Player 2 won". 
-let pessoa1 = 'papel';
-let pessoa2 = 'tesoura';
-
-if (pessoa1 === 'papel' && pessoa2 === 'tesoura') {
-  console.log('player 2 won')
-}else if (pessoa1 === 'tesoura' && pessoa2 === 'tesoura') {
-  console.log('A ties');
-}else if(pessoa1 === 'pedra' && pessoa2 === 'tesoura') {
-  console.log('player 2 won')
-
-//4
-//Desenvolva um algoritmo que verifica se a pessoa é maior ou menor de idade.
-//Imprima no console seguindo o exemplo: "A pessoa é maior de idade".
-//Bônus: Crie a condição utilizando operador ternário.
-// 5 
-
-//Crie um algoritmo que recebe a idade de Carolzita , Murilo e Baêta e imprime quem é a pessoa mais nova no formato:
-// "Pessoa" é a mais nova.
+//Exercício 09:
+for(let index = 0; index < numeros.length; index += 1){
+  console.log(numeros[index] / 2);
+}

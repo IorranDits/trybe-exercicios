@@ -51,6 +51,17 @@
         let background2 = document.getElementsByClassName('center-content')[0];
         background2.style.backgroundColor = 'white';
         
+        let title = document.getElementsByTagName('h1');
+        title[0].innerText = 'Exercício 5.1 - JavaScripit';
+
+        let upperText = document.getElementsByTagName('p');
+        upperText[0].innerText = 'Meta pra dois anos'.toUpperCase();
+
+        let paragraphs = document.getElementsByTagName('p');
+        for(index in paragraphs) {
+          console.log(paragraphs[index]);
+        }
+  
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()

@@ -110,9 +110,22 @@ function menorIndice(numeros) {
 
 //console.log(menorIndice([20, 30, 4, 40, 50, 30, 10]));
 
-//Exercício 04  -Fazer!
+//Exercício 04  
 
-// Exercíco 05
+function maiorNome(nomes) {
+  let nome = nomes[0];
+  for (index in nomes) {
+    if (nome.length < nomes[index].length){
+      nome = nomes[index];
+    }
+  }
+  return nome;
+}
+
+//console.log(maiorNome(['Frederico', 'José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+
+// Exercíco 05 - Não consegui efetuar!
 
 function maisRepete (numeros) {
   let contRepetido = 0;
@@ -135,6 +148,23 @@ contNumero = 0;
   return numeros[indexNumeroRepetido];
 
 }
-console.log(maisRepete([1,2,3,4,5,6,7,7,8,9,7]));
+//console.log(maisRepete([1,2,3,4,5,6,7,7,8,9,7]));
+
+
+//Exercício 6
+
+function somaNaturais(numero) {
+  let soma = 0;
+  for (index = numero; index > 0; index -=1){
+    soma += numero;
+    numero -= 1;
+  }
+  return soma;
+}
+
+//console.log(somaNaturais(4));
+
+//Exercício 07 
+
 
 

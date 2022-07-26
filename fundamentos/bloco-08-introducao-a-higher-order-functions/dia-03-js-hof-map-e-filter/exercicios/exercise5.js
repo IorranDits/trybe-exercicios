@@ -63,13 +63,10 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-const booksMore60 = (books) => {
+const authorList = (books) => {
   return books.filter((book) => {
-   return book.releaseYear < 1962;
-  }).sort((bookA, bookB) => bookA.releaseYear - bookB.releaseYear); 
-};
+    return book.genre === 'Fantasia' || book.genre === 'Ficção Científica';
+  }).map((book) => (`${book.author.name}`)).sort();
+}
 
-console.log(booksMore60(books));
-
-
-
+console.log(authorList(books));
